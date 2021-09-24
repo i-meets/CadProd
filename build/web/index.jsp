@@ -1,3 +1,14 @@
+
+<%@page import="util.Config"%>
+<%@page import="java.sql.*" %>
+<%@page import="com.mysql.jdbc.Driver" %>
+<%@page import="util.Connection" %>
+
+<% Config servidor = new Config().servidor; %>
+<% System.out.println("#### "+servidor);%>
+
+
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,40 +23,40 @@
 <link rel="stylesheet" href="css/login.css" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <div class="main">
-    
-    
+
+
     <div class="container">
-<center>
-<div class="middle">
-      <div id="login">
+        <center>
+            <div class="middle">
+                <div id="login">
 
-        <form action="javascript:void(0);" method="get">
+                    <form action="javascript:void(0);" method="get">
 
-          <fieldset class="clearfix">
+                        <fieldset class="clearfix">
 
-            <p ><span class="fa fa-user"></span><input type="email"  Placeholder="Email" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
-            <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Senha" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
-            
-             <div>
+                            <p ><span class="fa fa-user"></span><input type="email"  Placeholder="Email" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                            <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Senha" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+                            <div>
                                 <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Recuperar senha
-                                password?</a></span>
+                                        password?</a></span>
                                 <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Login"></span>
                             </div>
 
-          </fieldset>
-<div class="clearfix"></div>
-        </form>
+                        </fieldset>
+                        <div class="clearfix"></div>
+                    </form>
 
-        <div class="clearfix"></div>
+                    <div class="clearfix"></div>
 
-      </div> <!-- end login -->
-      <div class="logo">HS
-          
-          <div class="clearfix"></div>
-      </div>
-      
-      </div>
-</center>
+                </div> <!-- end login -->
+                <div class="logo">VISONET
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </center>
     </div>
 
 </div>

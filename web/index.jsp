@@ -118,7 +118,7 @@
                 </div> <!-- end login -->
                 <div class="logo">
 
-                    <span class="d-none d-md-block">IMOB</span>
+                    <span class="d-none d-md-block">VISONET</span>
 
                     <div class="clearfix"></div>
                 </div>

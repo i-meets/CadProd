@@ -54,6 +54,7 @@
                                     String nivelUsuario = "";
                                     String fotoUsuario = "";
                                     String idUsuario = "";
+                                    String emailUsuario = "";
 
                                     String user = "", pass = "";
                                     int i = 0;
@@ -63,13 +64,14 @@
                                         st = new Conexao().conectar().createStatement();
                                         rs = st.executeQuery("SELECT * FROM usuarios where email = '" + email + "' and senha = '" + senha + "'");
                                         while (rs.next()) {
-                                            user = rs.getString(4);
-                                            pass = rs.getString(5);
+                                            idUsuario = rs.getString(1);
                                             nomeUsuario = rs.getString(2);
                                             cpfUsuario = rs.getString(3);
+                                            user = rs.getString(4);
+                                            emailUsuario = rs.getString(4);
+                                            pass = rs.getString(5);
                                             nivelUsuario = rs.getString(6);
                                             fotoUsuario = rs.getString(7);
-                                            idUsuario = rs.getString(1);
                                             rs.last();
                                             i = rs.getRow();
                                         }
@@ -88,6 +90,9 @@
                                             session.setAttribute("nivelUsuario", nivelUsuario);
                                             session.setAttribute("fotoUsuario", fotoUsuario);
                                             session.setAttribute("idUsuario", idUsuario);
+                                            session.setAttribute("emailUsuario", emailUsuario);
+
+                                            //verifica o nível do usuário e redireciona para a pagina correta
                                             if (nivelUsuario.equals("admin")) {
                                                 response.sendRedirect("painel-admin");
                                             }

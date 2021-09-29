@@ -101,6 +101,7 @@
                                                 response.sendRedirect("painel-corretor");
                                             }
 
+                                            
                                             if (nivelUsuario.equals("tesoureiro")) {
                                                 response.sendRedirect("painel-tesouraria");
                                             }

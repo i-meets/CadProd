@@ -18,6 +18,7 @@
         response.sendRedirect("../index.jsp");
     }
 %>
+
 <%
     //variaveis menu
     String pag = request.getParameter("pag");
@@ -191,7 +192,8 @@
                             </div>
                         </form>
 
-                        <!-- Topbar Navbar -->
+                        <!-- Topbar Navbar
+                        -->
                         <ul class="navbar-nav ml-auto">
 
                             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
@@ -414,7 +416,7 @@
 
                                                 <div class="form-group">
                                                     <label >Email</label>
-                                                    <input value="<%=emailUsuario%>" type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                                    <input value="<%=emailUsuario%>" type="email" class="form-control" id="email" name="email" placeholder="Email" disabled="">
                                                 </div>
 
                                                 <div class="form-group">
@@ -447,7 +449,7 @@
                                         <input value="<%=cpfUsuario%>" type="hidden" name="antigo" id="antigo">
 
                                         <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                        <button type="submit" name="btn-salvar-perfil" id="btn-salvar-perfil" class="btn btn-primary">Salvar</button>
+                                        <button type="submit" name="btn-salvar" id="btn-salvar-perfil" class="btn btn-primary">Salvar</button>
                                     </div>
                                 </form>
 
@@ -485,24 +487,24 @@
 <!--SCRIPT PARA SUBIR IMAGEM PARA O SERVIDOR -->
 <script type="text/javascript">
 
-                                            function carregarImg() {
+                                                        function carregarImg() {
 
-                                                var target = document.getElementById('target');
-                                                var file = document.querySelector("input[type=file]").files[0];
-                                                var reader = new FileReader();
+                                                            var target = document.getElementById('target');
+                                                            var file = document.querySelector("input[type=file]").files[0];
+                                                            var reader = new FileReader();
 
-                                                reader.onloadend = function () {
-                                                    target.src = reader.result;
-                                                };
+                                                            reader.onloadend = function () {
+                                                                target.src = reader.result;
+                                                            };
 
-                                                if (file) {
-                                                    reader.readAsDataURL(file);
+                                                            if (file) {
+                                                                reader.readAsDataURL(file);
 
 
-                                                } else {
-                                                    target.src = "";
-                                                }
-                                            }
+                                                            } else {
+                                                                target.src = "";
+                                                            }
+                                                        }
 
 </script>
 

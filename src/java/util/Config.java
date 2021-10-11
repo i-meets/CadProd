@@ -11,6 +11,6 @@ public class Config {
     public String servidor = "localhost";
     public String banco = "mydb";
     public String usuario = "root";
-    public String senha = "root";
+    public String senha = "";
 
 }

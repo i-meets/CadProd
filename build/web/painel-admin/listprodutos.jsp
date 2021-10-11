@@ -1,17 +1,60 @@
-<%-- 
-    Document   : listprodutos
-    Created on : 27 de set de 2021, 21:26:40
-    Author     : AndrÃ©
---%>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Lista Produtos</h1>
-    </body>
-</html>
+<div class="table-responsive" id="sailorTableArea">
+    <table id="sailorTable" class="table table-striped table-bordered" width="100%">
+
+        <thead>
+            <tr>
+                <th>Código:</th>
+                <th>Descrição:</th>
+                <th>NCM:</th>
+                <th>Enquadramento:</th>
+                <th>Data últ. DUE:</th>
+                <th>Quantidade:</th>
+                <th>Uni. Medida</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>55536697</td>
+                <td>FERROLHO PT1911 45 CAFO GA</td>
+                <td>93051000</td>
+                <td>80000</td>
+                <td>08/10/2021</td>
+                <td>926</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>55536697</td>
+                <td>FERROLHO PT1911 45 CAFO GA</td>
+                <td>93051000</td>
+                <td>80000</td>
+                <td>08/10/2021</td>
+                <td>926</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>55536697</td>
+                <td>FERROLHO PT1911 45 CAFO GA</td>
+                <td>93051000</td>
+                <td>80000</td>
+                <td>08/10/2021</td>
+                <td>926</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>55536697</td>
+                <td>FERROLHO PT1911 45 CAFO GA</td>
+                <td>93051000</td>
+                <td>80000</td>
+                <td>08/10/2021</td>
+                <td>926</td>
+                <td>PC</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
